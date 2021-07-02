@@ -5,32 +5,31 @@ public class mio
    
     
     public void caracol( ){
-          int n=5;
-          String [][] matriz = new String [n][n];
-          int a=0;
-          int b= n-1;
+          String [][] matriz = new String [5][5];
+          int q=0;
+          int w=4;
           int valor=1;
     
           for(int j=0; j< matriz.length;j++){
-                  for(int i=a; i<=b;i++){
-                         matriz[a][i] = valor++ +"\t";
+                  for(int i=q; i<=w;i++){
+                         matriz[q][i] = valor++ +"\t";
                 }
-                for(int i=a+1; i<=b;i++){
-                         matriz[i][b]=valor++ +"\t";   
+                for(int i=q+1; i<=w;i++){
+                         matriz[i][w]=valor++ +"\t";   
                 } 
-                for(int i=b-1; i>=a;i--){
-                         matriz[b][i]=valor++ +"\t";  
+                for(int i=w-1; i>=q;i--){
+                         matriz[w][i]=valor++ +"\t";  
                 }
-                for(int i=b-1; i>=a+1;i--){
-                         matriz[i][a] = valor++ +"\t";
+                for(int i=w-1; i>=q+1;i--){
+                         matriz[i][q] = valor++ +"\t";
                 }
-                a++; 
-                b--;
+                q++; 
+                w--;
           }
           
-          for(int f=0; f<matriz.length;f++){
-              for(int i=0; i< matriz[f].length; i++){
-                  System.out.print(matriz[f][i]);  
+          for(int k=0; k<matriz.length;k++){
+              for(int h=0; h< matriz[k].length; h++){
+                  System.out.print(matriz[k][h]);  
               }      
               System.out.println();
           }
